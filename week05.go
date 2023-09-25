@@ -9,6 +9,6 @@ import (
 func main() {
 	fmt.Print("Input score : ")
 	reader := bufio.NewReader(os.Stdin)
-	input := reader.ReadString('\n')
-	fmt.Println(input)
+	inputScore, _ := reader.ReadString('\n') // option 1
+	fmt.Println(inputScore)
 }
